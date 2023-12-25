@@ -1,1 +1,1 @@
-console.log(Website is working)
+console.log('Website is working')
