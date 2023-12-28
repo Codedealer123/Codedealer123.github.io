@@ -11,5 +11,6 @@ a {text-align: center;
 }
 
 body {
+    cursor: url('/cursor/cursor.svg'), auto;
     background-color: rgb(0, 0, 0);
 } 
