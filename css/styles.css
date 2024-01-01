@@ -1,16 +1,16 @@
 p {text-align: center;
-    color: #808080;
+    color: #516582;
 }
 
 h1 {text-align: center;
-    color: #808080;
+    color: #516582;
 }
 
 a {text-align: center;
-    color: #808080;
+    color: #516582;
 }
 
 body {
-    cursor: url('/cursor/cursor.svg'), auto;
-    background-color: rgb(0, 0, 0);
+    cursor: url('/img/cursor/cursor.svg'), auto;
+    background-color: rgb(44, 44, 44);
 } 
