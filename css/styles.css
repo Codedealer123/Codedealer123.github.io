@@ -1,4 +1,26 @@
-.ui-tabs {
-    width: 300px;
+.centered .ui-tabs-nav {
+    height: 2.35em;
+    text-align: center;
+}
+.centered .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    margin: 0em;
+}
+
+body {
+    background-color: black;
+
+}
+
+h1 {
+    text-align: center;
+    color: #808080;
+
+}
+
+p {
+    text-align: center;
+    color: #808080;
 
 }
