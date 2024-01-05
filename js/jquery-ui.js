@@ -1,5 +1,4 @@
-$(document).ready(function() { 
-	$("#my-tabs").tabs({ 
-			active: 0
-		}) 
-}) 
+$(function() {  
+	$( "#my-tabs" ).tabs();  
+	$( "#my-tabs" ).tabs("disable");  
+ });
