@@ -2,15 +2,24 @@
 <html>
     <head>
         <link rel="icon" href="/img/Icon/Favicon.ico">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/jquery-ui.css">
         <title>Code_Launcher</title>
     </head>
     <body>
         <script src="/jQuery/jquery.min.js"></script>
+        <script src="/js/jquery-ui.js"></script>
         <h1>Welcome to Code_Launcher</h1>
-        <script src="/js/script.js"></script>
         <hr>
-        <a href="/Main/Game Launcher/Index_Game_Launcher.html">
-        <img src="/img/Launchers/console.png" alt="Picture of GLuancher" height="188" width="188"></a>
+        <div id="my-tabs">
+            <ul><a href="#Games">Games</a></ul>
+            <ul><a href="#Videos">Videos</a></ul>
+            <ul>About</ul>
+            <div id="Games">
+                <a href="/Main/Game Launcher/Index_Game_Launcher.html">
+                <img src="/img/Launchers/console.png" alt="Picture of GLuancher" height="188" width="188"></a>
+            </div>
+            <div id="Videos"></div>
+            <div id="About"></div>
+        </div>
     </body>
 </html>
