@@ -1,5 +1,5 @@
 $(document).ready(function() { 
 	$("#my-tabs").tabs({ 
-			active: 1
+			active: 0
 		}) 
 }) 
