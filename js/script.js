@@ -1,1 +1,1 @@
-console.log('Website is working')
+$('#my-tabs').tabs()
