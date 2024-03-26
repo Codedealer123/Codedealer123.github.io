@@ -6,7 +6,7 @@
         {
             "label": "update",
             "type": "shell",
-            "command": "sudo apt full-upgrade -y && sudo apt upgrade dist -y"
+            "command": "sudo apt full-upgrade -y"
         }
     ]
 }
