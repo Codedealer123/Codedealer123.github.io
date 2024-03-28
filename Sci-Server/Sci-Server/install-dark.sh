@@ -26,6 +26,10 @@ apt install libfuse2 -y
 
 apt install trash-cli -y
 
+apt install openjdk-17-jdk -y
+
+apt install php8.2 -y
+
 echo '┌───── •✧✧• ─────┐
  -INSTALLING PACKAGES- 
 └───── •✧✧• ─────┘'
@@ -36,11 +40,6 @@ Installing apache'
 apt install apache2 -y
 
 echo '
-Installing java 17'
-
-apt install openjdk-17-jdk -y
-
-echo '
 Installing tomcat'
 
 apt install tomcat10 tomcat10-docs -y
@@ -49,11 +48,6 @@ echo '
 Installing Webalizer'
 
 apt install webalizer -y
-
-echo '
-Installing php'
-
-apt install php8.2 -y
 
 echo '
 Installing MariaDB'
