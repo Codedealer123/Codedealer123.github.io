@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/CSS/style.css">
+        <link rel="stylesheet" href="/assets/CSS/button.css">
+        <script>
+            window.onload = function() {
+              if (document.referrer === "" || !document.referrer.includes(window.location.origin)) {
+              // Redirect to another page if accessed directly from index.html
+              window.location.href = "/"; // Change to your intended page
+            }
+          };
+        </script>
+        <title>Daily News</title>
+    </head>
+    <body>
+        <h1>Latest News</h1>
+        <div id="news-container"></div>
+        <script src="/assets/JS/news.js"></script>
+    </body>
+</html>
