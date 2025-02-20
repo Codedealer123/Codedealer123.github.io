@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 5rem;
+    color: #ff0043;
+    position: relative;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.sub-text {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff0043;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #ff0043;
+}
+
+.button:hover {
+    background: transparent;
+    color: #ff0043;
+}
+
+/* Glitch effect */
+.glitch {
+    position: relative;
+    animation: glitch-animation 1s infinite;
+}
+
+@keyframes glitch-animation {
+    0% { text-shadow: 2px 2px #ff0043, -2px -2px #00ffea; }
+    50% { text-shadow: -2px -2px #ff0043, 2px 2px #00ffea; }
+    100% { text-shadow: 2px 2px #ff0043, -2px -2px #00ffea; }
+}
+
+.cursor-effect {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ff0043;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff0043;
+    pointer-events: none;
+    animation: fadeOut 0.5s linear forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(2); }
+}

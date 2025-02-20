@@ -2,9 +2,13 @@
 <html class="staticrypt-html">
     <head>
         <meta charset="utf-8" />
-        <title>You shall know</title>
+        <title>You Shall Know</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <script>
+            if (typeof navigator.serviceWorker !== 'undefined') {
+              navigator.serviceWorker.register('sw.js')
+            }
+        </script>
         <!-- do not cache this page -->
         <meta http-equiv="cache-control" content="max-age=0" />
         <meta http-equiv="cache-control" content="no-cache" />
@@ -183,8 +187,8 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">You shall know</p>
-                        <p></p>
+                        <p class="staticrypt-title">You Shall Know</p>
+                        <p>You HAVE to enter the password to access the page on the other side of it, don't think of trying to do something to load directly into the other side as I have thought and attended to that.</p>
                     </div>
 
                     <hr class="staticrypt-hr" />
@@ -822,7 +826,7 @@ exports.init = init;
                 templateToggleAltShow = "template_toggle_show",
                 templateToggleAltHide = "template_toggle_hide",
                 isRememberEnabled = false,
-                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"361240fb5f5cea01483f6779166df4f030f51f5334a7d149de41cf75e30e082722173ac1fc982400b50bb62aa26eecbc38791fe387ae373ca863662c5c2b9e4b42d233f620e9611f0c5895d5f8ac25ffa38c9da215f57095101007e8929b0da095ab656645a61788ab0e7227d954d5055339e916eaac528133698e778cd9b7a8484472218c9274b7fc1a878327e99f9c887fc3679bc7e841ed0485a20b3a9c454037bc933f57029396ba76af19ace3b1b658a499912e2257f1134ba82ff8e68a7cb19ce0aa01e084be2d08ef70675ae78a35ba165946d639e819e1bd29719c2793671ece42f85fbfd6e202d9851f3eccd2fc128d01242c80a69a3156d86850864bfd34c7fff93c08d89c13d9e68b43c7afb1e46ac0bbeff688916c0143ad9d4f36bf9e5c4be5ab57c3baffcafbfd386f5b1594d01d13e8268a6f8367e62e4f803453bdf108565dd6164fb3bf202acfdcb559c397a6aadaf4a83e15a8350540b34c0a4f645868ee00c63360241c1e0dab9d1b048eddb3963b4bb94878bd7e3092f29b25602219baeb8955ce10bf91a78b46755a7bf340e788569a094403c0ec98ebf56e964e6e25322c6327f535f6d139ab2dff7b560bea40dcacb43a25338b55101b1942c0e73cc39e804e497bd705a9","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"5fd3107dddd5aea69ccf76bf9582ea48"};
+                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"7af6df16582db49c9743bff91f39c184ddda97b38e3d96f2fad24dd209a2c394e45ed87127e4be614d8067e5b51d27936834059b2b960dcb9169c9dfb477f3dc3cc7bd0f1987d30852cf4676a511f064354653eb82363832cf799a8e49fb6809791838f84f103e5290807fd31ddc3bc1d9e9bf9b9fe4a3c05029370f99b9ca2f","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"c45d3fc2110cd99c44a4697e19d3cef8"};
 
             // you can edit these values to customize some of the behavior of StatiCrypt
             const templateConfig = {

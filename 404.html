@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&') 
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-  </head>
-  <body>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Game Over</title>
+    <link rel="stylesheet" href="/assets/CSS/404.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">404</h1>
+        <p class="glitch-text">Oops! You got lost in the game.</p>
+        <p class="sub-text">The page you’re looking for doesn’t exist.</p>
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas> <!-- Adds a cool animated background -->
+    
+    <script src="/assets/JS/404.js"></script>
+</body>
 </html>
