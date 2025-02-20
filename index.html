@@ -4,11 +4,7 @@
         <meta charset="utf-8" />
         <title>You Shall Know</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script>
-            if (typeof navigator.serviceWorker !== 'undefined') {
-              navigator.serviceWorker.register('sw.js')
-            }
-        </script>
+
         <!-- do not cache this page -->
         <meta http-equiv="cache-control" content="max-age=0" />
         <meta http-equiv="cache-control" content="no-cache" />
@@ -199,7 +195,7 @@
                                 id="staticrypt-password"
                                 type="password"
                                 name="password"
-                                placeholder="Answer"
+                                placeholder="Password"
                                 autofocus
                             />
 
@@ -826,7 +822,7 @@ exports.init = init;
                 templateToggleAltShow = "template_toggle_show",
                 templateToggleAltHide = "template_toggle_hide",
                 isRememberEnabled = false,
-                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"7af6df16582db49c9743bff91f39c184ddda97b38e3d96f2fad24dd209a2c394e45ed87127e4be614d8067e5b51d27936834059b2b960dcb9169c9dfb477f3dc3cc7bd0f1987d30852cf4676a511f064354653eb82363832cf799a8e49fb6809791838f84f103e5290807fd31ddc3bc1d9e9bf9b9fe4a3c05029370f99b9ca2f","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"c45d3fc2110cd99c44a4697e19d3cef8"};
+                staticryptConfig = {"staticryptEncryptedMsgUniqueVariableName":"c30c1bc5abb752e8fa47e5d59405c44e31b46377c04e09dc14e0f3c8c938d983c14cd7c49b422dd7b7828815d42cda739e863da46b7b5ce93a73dded0dd40dd73b5d8c9ce4ed03dfb14a1631d55fc661dcaa4b19626510bb86fb2b143979d2ddb20e86340ba8196b0563e8ed71376a0e60c2ee92103ce3aca0ce48776f464ebdfba9173f17c90e17ff5d3131203d6633","isRememberEnabled":false,"rememberDurationInDays":0,"staticryptSaltUniqueVariableName":"c1c058ad76184616a9449510c3767476"};
 
             // you can edit these values to customize some of the behavior of StatiCrypt
             const templateConfig = {
