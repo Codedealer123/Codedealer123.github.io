@@ -30,3 +30,6 @@ p {
     pointer-events: none;
     animation: fadeOut 0.5s linear forwards;
 }
+html {
+    cursor: url('/assets/icons/cursor.png'), auto;
+}
