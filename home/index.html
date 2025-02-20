@@ -25,6 +25,15 @@
           <link rel="stylesheet" href="/assets/CSS/style.css">
           <link rel="stylesheet" href="/assets/CSS/button.css">
           <script src="/assets/JS/jquerycode.js"></script>
+          <script>
+            window.onload = function() {
+              if (document.referrer === "" || !document.referrer.includes(window.location.origin)) {
+              // Redirect to another page if accessed directly from index.html
+              window.location.href = "/"; // Change to your intended page
+            }
+          };
+
+          </script>
     </head>
     <body style="background-color: rgb(3, 0, 29); text-align: center;">
         <!-- Google Tag Manager (noscript) -->
