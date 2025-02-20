@@ -20,3 +20,13 @@ p {
     font-family: "Gaegu";
     color: cadetblue;
 }
+.cursor-effect {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 90, 146);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0, 90, 146);
+    pointer-events: none;
+    animation: fadeOut 0.5s linear forwards;
+}
