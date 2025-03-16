@@ -4,7 +4,7 @@
     <meta name="theme-color" content="#fff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                    maximum-scale=1.0, user-scalable=no">
-    <title>chrome://dino/ - Dino game, press space to play</title>
+    <title>404 - Not Found</title>
     <style>/* Copyright 2017 The Chromium Authors
    * Use of this source code is governed by a BSD-style license that can be
    * found in the LICENSE file. */
@@ -1333,21 +1333,6 @@
       }
       throw new Error('Assertion failed' + (message ? `: ${message}` : ''));
   }
-  
-  // Copyright 2022 The Chromium Authors
-  // Use of this source code is governed by a BSD-style license that can be
-  // found in the LICENSE file.
-  /**
-   * @fileoverview This file defines a singleton which provides access to all data
-   * that is available as soon as the page's resources are loaded (before DOM
-   * content has finished loading). This data includes both localized strings and
-   * any data that is important to have ready from a very early stage (e.g. things
-   * that must be displayed right away).
-   *
-   * Note that loadTimeData is not guaranteed to be consistent between page
-   * refreshes (https://crbug.com/740629) and should not contain values that might
-   * change if the page is re-opened later.
-   */
   class LoadTimeData {
       data_ = null;
       /**
@@ -5352,30 +5337,6 @@
           new Runner('.interstitial-wrapper');
       }
   }
-  function getHtml(data, showingDetails) {
-      // clang-format off
-      return x `
-      <div id="main-frame-error" class="interstitial-wrapper ${getMainFrameErrorCssClass(showingDetails)}">
-        <div id="main-content">
-          <div class="icon ${getMainFrameErrorIconCssClass(data)}"></div>
-          <div id="main-message">
-            <h1>
-              <span .innerHTML="${data.heading.msg}"></span>
-            </h1>
-            ${data.summary ? x `
-              <p .innerHTML="${data.summary.msg}"></p>
-            ` : ''}
-  
-            ${shouldShowSuggestionsSummaryList(data) ? x `
-              <div id="suggestions-list">
-                <p>${data.suggestionsSummaryListHeader}</p>
-                <ul class="${getSuggestionsSummaryItemCssClass(data)}">
-                  ${data.suggestionsSummaryList.map(item => x `
-                    <li .innerHTML="${item.summary}"></li>
-                  `)}
-                </ul>
-              </div>
-            ` : ''}
   
             <div class="error-code">${data.errorCode}</div>
   
