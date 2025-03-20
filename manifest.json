@@ -8,7 +8,7 @@
     "theme_color": "#050034",
     "display": "fullscreen",
     "start_url": "/",
-    "short_name": "GameHub",
+    "short_name": "CDGames!",
     "description": "A Game Hub that includes all the games of GameV6 and more!",
     "orientation": "landscape-primary",
     "prefer_related_applications": false,
