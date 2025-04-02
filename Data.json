@@ -9,6 +9,14 @@
         "type": "html"
     },
     {
+        "name": "Zelda, Orcale of Seasons",
+        "image": "https://assets-prd.ignimgs.com/2021/12/14/zeldaoracleofseasons-1639524385813.jpg",
+        "path": "https://raw.githubusercontent.com/Codedealer123/Codedealer123Games/main/games/Zelda/ZeldaGames/LegendOfZeldaOrcaleOfAges.html",
+        "description": "A Zelda Game",
+        "types": ["popular", "skill", "puzzle-solving"],
+        "type": "html"
+    },
+    {
         "name": "Fnaf 2",
         "image": "https://raw.githubusercontent.com/Codedealer123/Codedealer123-GamesDB/main/images/fnaf2.jpeg",
         "path": "https://raw.githubusercontent.com/Codedealer123/Codedealer123-GamesDB/main/games/fnaf2.html",
