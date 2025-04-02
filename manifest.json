@@ -1,0 +1,57 @@
+{
+    "id": "GameV7",
+    "dir": "ltr",
+    "lang": "en",
+    "name": "CDGames!OS",
+    "scope": "https://codedealer123.github.io",
+    "background_color": "#03001d",
+    "theme_color": "#050034",
+    "display": "fullscreen",
+    "start_url": "/",
+    "short_name": "CDGames!OS",
+    "description": "A GamingOS that includes all the games of GameV7 and more!",
+    "orientation": "landscape-primary",
+    "prefer_related_applications": false,
+    "display_override": [
+      "window-controls-overlay",
+      "fullscreen"
+    ],
+    "icons": [
+      {
+        "src": "./images/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./images/192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./images/192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "launch_handler": {
+      "client_mode": "navigate-existing"
+    },
+    "edge_side_panel": {},
+    "shortcuts": [
+      {
+        "name": "CallMan",
+        "url": "https://codedealer123.github.io/CallMan/",
+        "description": "A place where you can call people!"
+      }
+    ],
+    "categories": [
+      "entertainment",
+      "games",
+      "kids",
+      "social",
+      "utilities"
+    ]
+  }
