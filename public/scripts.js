@@ -1,4 +1,5 @@
 // Configure Auth0
+async function initializeAuth0() {
 const auth0 = new auth0.WebAuth({
   domain: 'cdgames.us.auth0.com', // Replace with your Auth0 domain
   clientID: 'AHjuO0hConAEVBkZe6NEfPT7HeJ7EDJc',  // Replace with your Auth0 client ID
@@ -6,6 +7,7 @@ const auth0 = new auth0.WebAuth({
   responseType: 'token id_token',
   scope: 'openid profile email'
 });
+};
 
 const loginBtn = document.getElementById('login-btn');
 const logoutBtn = document.getElementById('logout-btn');
