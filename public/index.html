@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Firebase Website Test</title>
-    </head>
-    <body>
-        <h1>It works!!!</h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDGamez</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.auth0.com/js/auth0/9.19/auth0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Authentication</h1>
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" style="display: none;">Logout</button>
+    <div id="user-info" style="display: none;">
+      <h2>Welcome, <span id="user-name"></span></h2>
+      <img id="user-picture" alt="User Picture" />
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
 </html>
