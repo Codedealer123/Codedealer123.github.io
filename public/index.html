@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CDGamez</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Authentication</h1>
-    <button id="login-btn">Login</button>
-    <button id="logout-btn" style="display: none;">Logout</button>
-    <div id="user-info" style="display: none;">
-      <h2>Welcome, <span id="user-name"></span></h2>
-      <img id="user-picture" alt="User Picture" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDGamez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./jquery/UI/jquery-ui.min.css">
+    <script src="./jquery/jquery.js"></script>
+    <script src="./jquery/UI/jquery-ui.min.js"></script>
+    <script>
+      window.onload = function() {
+        if (document.referrer === "" || !document.referrer.includes(window.location.origin)) {
+        window.location.href = "codedealer123.github.io";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">First</a></li>
+        <li><a href="#tabs-2">Second</a></li>
+        <li><a href="#tabs-3">Third</a></li>
+      </ul>
+      <div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+      <div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
     </div>
-  </div>
-  <script async src="https://cdn.auth0.com/js/auth0/9.19/auth0.min.js"></script>
-  <script src="scripts.js" defer></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
