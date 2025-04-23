@@ -1,12 +1,22 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>redirecting...</title>
-    </head>
-    <body>
-        <script>
-            window.location.replace("https://cdgames-website.web.app");
-            console.log("redirecting...");
-        </script>
-    </body>
+	<head>
+		<title>superStudy</title>
+	</head>
+	<body>
+		<center>
+			<button onclick="superStudy()" style="opacity: 0;">SuperStudy</button>
+		</center>
+		<script>
+			function superStudy() {
+				var win = window.open()
+				var url = "https://cdgames-website.web.app/"
+				var iframe = win.document.createElement('iframe')
+				iframe.style.width = "100%";
+				iframe.style.height = "100%";
+				iframe.style.border = "none";
+				iframe.src = url
+				win.document.body.appendChild(iframe)
+			}
+		</script>
+	</body>
 </html>
