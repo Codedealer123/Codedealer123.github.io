@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Video Call</h3>
+  <input type="email" id="videoCallEmail" placeholder="Recipient's email">
+  <button onclick="initiateVideoCall()">Start Video Call</button>
+  <div>
+    <video id="localVideo" autoplay muted playsinline width="150"></video>
+    <video id="remoteVideo" autoplay playsinline width="150"></video>
+  </div>
+  <script src="video_call.js"></script>
+</body>
+</html>
