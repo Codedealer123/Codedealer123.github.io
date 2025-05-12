@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <title>BlueChat Login</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    self.addEventListener('fetch', function(event) {
+  // Check if the request URL matches the Firebase script
+  if (event.request.url === 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js') {
+    // Allow the browser to fetch the script directly without interception
+    return;
+  }
+
+  // Handle other requests, e.g., serve from cache or network
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );
+});
+  </script>
 </head>
 <body>
   <div class="login-container">
